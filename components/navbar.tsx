@@ -3,7 +3,8 @@
 import Link from "next/link"
 import { useState } from "react"
 import {AiOutlineMenu, AiOutlineClose} from "react-icons/ai"
-export default function Navbar() {
+
+const Navbar: React.FC =()=> {
 
     const [nav, setNav] = useState(false)
 
@@ -62,3 +63,4 @@ export default function Navbar() {
     </div>
   )
 }
+export default Navbar
