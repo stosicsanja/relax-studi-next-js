@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { SliderData } from "./SliderData"
 import{ FaArrowCircleLeft, FaArrowCircleRight} from "react-icons/fa"
-
+import Image from "next/image"
 
 
 interface ImageProps {
@@ -32,7 +32,7 @@ const Slider: React.FC<MyComponentProps> = ({ images }) => {
  }
 
   return (
-    <div id="gallery" className="m-8">
+    <div id="galerija" className="m-8">
       <h1 className="text-3xl font-bold text-center p-8">Galerija</h1>
       <div className="relative flex justify-center items-center bg-white">
        {images.map((image, index) => {
@@ -41,7 +41,9 @@ const Slider: React.FC<MyComponentProps> = ({ images }) => {
        <FaArrowCircleLeft onClick={prevSlide} className="absolute top-[50%] left-[180px] text-black/70 cursor-pointer select-none z-[2] " size={40}></FaArrowCircleLeft>
             {index===current && (
          
-       <img  className="w-[800px] h-[500px] "key={index} src={image.src} alt={image.alt} />
+       <Image width="880" 
+       height="550"
+       className="w-[800px] h-[500px] "key={index} src={image.src} alt={image.alt} />
              
             )}
                  <FaArrowCircleRight onClick={nextSlide} className="absolute top-[50%] right-[180px] text-black/70 cursor-pointer select-none z-[2] " size={40}></FaArrowCircleRight>
