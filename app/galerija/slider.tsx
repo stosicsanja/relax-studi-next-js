@@ -1,5 +1,7 @@
+"use client"
+
 import { useState } from "react";
-import { SliderData } from "./SliderData"
+
 import{ FaArrowCircleLeft, FaArrowCircleRight} from "react-icons/fa"
 import Image from "next/image"
 
@@ -43,7 +45,7 @@ const Slider: React.FC<MyComponentProps> = ({ images }) => {
          
        <Image width="880" 
        height="550"
-       className="w-[800px] h-[500px] "key={index} src={image.src} alt={image.alt} />
+       className="w-[800px] h-[500px]" key={index} src={image.src} alt={image.alt} />
              
             )}
                  <FaArrowCircleRight onClick={nextSlide} className="absolute top-[50%] right-[180px] text-black/70 cursor-pointer select-none z-[2] " size={40}></FaArrowCircleRight>

@@ -24,14 +24,14 @@ const Navbar: React.FC =()=> {
                     <Link href="/">Naslovna</Link>
                 </li >
                 <li className="p-4">
-                    <Link href="/o-nama">O nama</Link>
+                    <Link href="/galerija">Galerija</Link>
                 </li> 
                  <li className="p-4">
-                    <Link href="/korisnici">Korisnici</Link>
-                </li >
+                    <Link href="/o-nama">O nama</Link>
+                </li>
                 <li className="p-4">
                     <Link href="/kontakt">Kontakt</Link>
-                </li >
+                </li>
             </ul>
         
         <div onClick={handleNav}className="block sm:hidden z-10">
@@ -45,14 +45,14 @@ const Navbar: React.FC =()=> {
             : "font-bold absolute top-0 right-0 bottom-0 left-[-100%] flex justify-center items-center w-full h-screen bg-black ease-in duration-300"
               }  >
                  <ul>
-                <li className="tex p-4 text-4xl hover:text-gray-500">
+                <li className=" p-4 text-4xl hover:text-gray-500">
                     <Link href="/">Naslovna</Link>
                 </li >
                 <li className="p-4 text-4xl  hover:text-gray-500">
-                    <Link href="/o-nama">O nama</Link>
+                    <Link href="/galerija">Galerija</Link>
                 </li> 
                  <li className="p-4 text-4xl  hover:text-gray-500">
-                    <Link href="/korisnici">Korisnici</Link>
+                    <Link href="/o-nama">O nama</Link>
                 </li >
                 <li className="p-4  text-4xl hover:text-gray-500">
                     <Link href="/kontakt">Kontakt</Link>
